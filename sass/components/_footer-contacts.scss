@@ -1,0 +1,25 @@
+/* Посилання в футері */
+.link-address {
+    font-style: normal;
+    color: var(--second-text-color);
+    text-decoration: none;
+    transition: color var(--animation);
+
+    &:hover,
+    &:focus {
+    color: var(--accent-text-color);
+    }
+}
+
+.link-contacts {
+    font-style: normal;
+    color: var(--footer-transparent-color);
+    text-decoration: none;
+    transition: color var(--animation);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-text-color);
+    }
+}
+

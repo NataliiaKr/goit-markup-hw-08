@@ -1,0 +1,26 @@
+/* кнопка загальні стилі та кнопка замовлення послуги*/
+.btn {
+    font-family: inherit;
+    @include fonts(700, 16px, 1.87, 0.06em);
+    
+    cursor: pointer;
+
+    color: var(--second-text-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 0;
+}
+
+.hero-btn {
+    width: 218px;
+    min-height: 50px;
+    padding: 10px 32px;
+
+    background-color: var(--accent-bg-color);
+    transition: background-color var(--animation);
+
+    &:hover,
+    &:focus {
+        background-color: var(--activ-btn);
+    }
+}

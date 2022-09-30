@@ -1,0 +1,33 @@
+/* розділ Особливості */
+
+.feature {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &__list {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__item {
+        flex-basis: calc((100% - 90px) / 4);
+    }
+
+    &__icon-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 120px;
+        background-color: #F5F4FA;
+        border-radius: 4px;
+        margin-bottom: 30px;
+    }
+
+    &__item-title {
+        @include fonts(700, 14px, 1.17);
+        
+        color: var(--title-text-color);
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+}

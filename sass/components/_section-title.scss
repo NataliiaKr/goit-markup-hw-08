@@ -1,0 +1,9 @@
+/* Заголовки секцій */
+
+.section__title {
+    @include fonts(700, 36px, 1.17);
+    
+    color: var(--title-text-color);
+    text-align: center;
+    margin-bottom: 50px;
+}

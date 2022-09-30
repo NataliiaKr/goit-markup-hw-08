@@ -1,0 +1,9 @@
+/* Іконки контактів */
+.contacts-icon {
+    fill: var(--primary-text-color);
+
+    .link-header:hover &,
+    .link-header:focus & {
+        fill: currentColor;
+    }
+}

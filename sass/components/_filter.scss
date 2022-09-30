@@ -1,0 +1,44 @@
+/* Кнопки фільтра в портфоліо */
+.filter-box {
+    display: flex;
+    align-items: center;
+    margin: 0 auto 50px;
+}
+
+.item-filter {
+    margin-right: 8px;
+
+    &:last-child {
+    margin-right: 0;
+    }
+}
+
+.filter-btn {
+    background-color: var(--team-background);
+    color: var(--title-text-color);
+    font-family: inherit;
+    @include fonts(500, 16px, 1.62, 0.03em);
+    
+    cursor: pointer;
+
+    padding: 6px 22px;
+    border: 0;
+    border-radius: 4px;
+    transition: color var(--animation), background-color var(--animation), box-shadow var(--animation);
+
+
+    &.first {
+        width: 73px;
+        padding: 6px 25px;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-bg-color);
+        color: var(--second-text-color);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+    }
+}
+
+

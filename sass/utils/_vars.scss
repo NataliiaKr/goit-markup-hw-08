@@ -1,0 +1,21 @@
+:root {
+/* Колір тексту */
+--primary-text-color: #757575;
+--title-text-color: #212121;
+--second-text-color: #ffffff;
+--accent-text-color: #2196f3;
+--logo-header-color: #000000;
+--footer-transparent-color: rgba(255, 255, 255, 0.6);
+--social-icons:#AFB1B8;
+
+/* Колір фону */
+--background-color: #ffffff;
+--second-background-color: #2f303a;
+--accent-bg-color: #2196f3;
+--activ-btn: #188ce8;
+--team-background: #f5f5f5;
+
+/* інше */
+--gap: 30px;
+--animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

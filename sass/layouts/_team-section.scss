@@ -1,0 +1,16 @@
+/* ceкція Наша команда */
+
+.team {
+    background-color: var(--team-background);
+    @include fonts(null, 16px, 1.19, null);
+    
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.team-box {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+

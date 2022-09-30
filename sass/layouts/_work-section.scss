@@ -1,0 +1,33 @@
+/* секція " Чим ми займаємося" */
+
+.work {
+    padding-bottom: 94px;
+
+    &__list {
+        display: flex;
+        gap: 30px;
+    }
+
+    &__item {
+    position: relative;
+    }
+
+    &__label-box {
+        position: absolute;
+        left: 0px;
+        bottom: 0px;
+        width: 100%;
+        height: 70px;
+        background-color: rgba(47, 48, 58, 0.8);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__label-title {
+        @include fonts(700, 14px, 1.14, 0.03em);
+        
+        color: var(--second-text-color);
+        text-transform: uppercase;
+    }
+}

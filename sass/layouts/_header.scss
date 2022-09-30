@@ -1,0 +1,70 @@
+/* Kонтейнер з header */
+.header-container {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ECECEC;
+}
+
+/* Розташування елементів в header*/
+.logo-box {
+    display: inline-block;
+    margin-right: 93px;
+}
+
+.item-nav {
+    display: inline-block;
+    margin-right: 50px;
+    
+    &:last-child {
+        margin-right: auto;
+    }
+}
+
+.item-contacts {
+    display: inline-block;
+    margin-right: 40px;
+
+    &:last-child {
+        margin-right: auto;
+    }
+}
+
+.contacts-container {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+/* Стиль посилань  в header*/
+
+.link-nav {
+    position: relative;
+    display: inline-block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--title-text-color);
+    @include fonts(500, 14px, 1.14, 0.02em);
+    
+    text-decoration: none;
+    transition: color var(--animation);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-text-color);
+    }
+}
+
+.link-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--primary-text-color);
+    @include fonts(500, 14px, 1.14, 0.02em);
+    
+    text-decoration: none;
+    transition: color var(--animation);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-text-color);
+    }
+}

@@ -1,0 +1,41 @@
+/* Постійні клієнти */
+
+.clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+    &__list {
+        display: flex;
+        gap: 30px;
+    }
+}
+
+.clients__item {
+    flex-basis: calc((1200px - 150px) / 6);
+}
+
+.clients__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92px;
+    border: 1px solid var(--social-icons);
+    border-radius: 4px;
+    transition: color var(--animation), border-color var(--animation);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-bg-color);
+        border: 1px solid var(--accent-text-color);
+    }
+}
+
+.clients__icon {
+    fill: var(--social-icons);
+    transition: fill var(--animation);
+
+    .clients__item:hover &,
+    .clients__item:focus & {
+        fill: currentColor;
+    }
+}
