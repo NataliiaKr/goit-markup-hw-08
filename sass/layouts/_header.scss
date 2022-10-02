@@ -11,6 +11,12 @@
     margin-right: 93px;
 }
 
+.nav {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
 .item-nav {
     display: inline-block;
     margin-right: 50px;
@@ -32,6 +38,10 @@
 .contacts-container {
     margin-right: 0;
     margin-left: auto;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
 }
 
 /* Стиль посилань  в header*/
@@ -66,5 +76,22 @@
     &:hover,
     &:focus {
         color: var(--accent-text-color);
+    }
+}
+
+/* Виділення поточної сторінки */
+.current {
+    color: var(--accent-text-color);
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0px;
+        bottom: -1px;
+        display: inline-block;
+        width: 100%;
+        height: 4px;
+        background-color: var(--accent-bg-color);
+        border-radius: 2px;
     }
 }

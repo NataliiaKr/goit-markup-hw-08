@@ -1,17 +1,30 @@
 /* Постійні клієнти */
 
 .clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 
-    &__list {
-        display: flex;
-        gap: 30px;
+    @media screen and (min-widht:1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
     }
 }
 
+.сlients__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
 .clients__item {
-    flex-basis: calc((1200px - 150px) / 6);
+    flex-basis: calc((100% - 30px) / 2);
+
+    @media screen and (min-width:768px) {
+        flex-basis: calc((100% - 60px) / 3);
+    }
+
+    @media screen and (min-width:1200px) {
+        flex-basis: calc((100% - 150px) / 6);
+    }   
 }
 
 .clients__link {
