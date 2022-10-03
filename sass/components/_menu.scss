@@ -55,13 +55,11 @@
 
     background-color: #FFFFFF;
     border: none;
-
 }
     
 .menu-close {
     fill: var(--title-text-color);
     transition: fill var(--animation);
-
 }
 
 .menu-toggle:hover .menu-close,
@@ -96,10 +94,8 @@
 }
 
 .mobile-socials {
-    
     display: flex;
     margin-top: 64px;
-    
 }
 
 .mobile-socials-link {
@@ -107,8 +103,7 @@
     display: inline-block;
     @include fonts (500, 18px, 1.22, 0.02em);
     color: var(--accent-text-color);
-    padding-right: 10px;
-   
+    padding-right: 10px; 
 }
     
 .line {

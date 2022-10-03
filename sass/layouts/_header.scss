@@ -8,7 +8,15 @@
 /* Розташування елементів в header*/
 .logo-box {
     display: inline-block;
-    margin-right: 93px;
+
+    @media screen and (min-width: 768px) {
+        margin-right: 87px;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-right: 93px;
+    }
+
 }
 
 .nav {
@@ -23,16 +31,36 @@
     
     &:last-child {
         margin-right: auto;
+    }  
+}
+
+.contacts-container {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: flex;
+        flex-direction: column;
+        padding-top: 21px;
+        padding-bottom: 21px;
+    
     }
 }
 
 .item-contacts {
-    display: inline-block;
-    margin-right: 40px;
-
-    &:last-child {
-        margin-right: auto;
+    
+    @media screen and (min-width: 1200px) {
+        display: inline-block;
+        margin-right: 40px;
+    
+        &:last-child {
+            margin-right: auto;
+        }
     }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        &:last-child {
+             margin-top: 10px;
+        }
+    }
+
 }
 
 .contacts-container {

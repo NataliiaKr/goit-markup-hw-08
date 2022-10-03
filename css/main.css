@@ -55,6 +55,8 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .list {
@@ -104,7 +106,16 @@ img {
 /* Розташування елементів в header*/
 .logo-box {
   display: inline-block;
-  margin-right: 93px;
+}
+@media screen and (min-width: 768px) {
+  .logo-box {
+    margin-right: 87px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .logo-box {
+    margin-right: 93px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -121,12 +132,33 @@ img {
   margin-right: auto;
 }
 
-.item-contacts {
-  display: inline-block;
-  margin-right: 40px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
 }
-.item-contacts:last-child {
-  margin-right: auto;
+
+@media screen and (min-width: 1200px) {
+  .item-contacts {
+    display: inline-block;
+    margin-right: 40px;
+  }
+  .item-contacts:last-child {
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .item-contacts:last-child {
+    margin-top: 10px;
+  }
 }
 
 .contacts-container {
@@ -200,27 +232,71 @@ img {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--second-background-color);
   text-align: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Img.png);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img.png);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bgd/hero-sm-@1x.png);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bgd/hero-sm-@1x.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: url(../images/hero-bgd/hero-sm-@2x.png);
+  }
+}
+@media screen and (min-width: 481px) {
+  .hero-section {
+    background-image: url(../images/hero-bgd/hero-md-@1x.png);
+  }
+}
+@media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: url(../images/hero-bgd/hero-md-@2x.png);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero-section {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .hero-section {
+    background-image: url(../images/hero-bgd/hero-lg-@1x.png);
+  }
+}
+@media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: url(../images/hero-bgd/hero-lg-@2x.png);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-section {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
 
 .hero-title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.3636363636;
+  font-size: 26px;
+  line-height: 1.61;
   letter-spacing: 0.06em;
   color: var(--second-text-color);
   text-transform: uppercase;
   margin: 0 auto 30px;
-  width: 696px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+  }
 }
 
 /* кнопка замовлення послуги*/
@@ -231,7 +307,7 @@ img {
   line-height: 1.87;
   letter-spacing: 0.06em;
   cursor: pointer;
-  width: 218px;
+  width: 200px;
   min-height: 50px;
   padding: 10px 32px;
   background-color: var(--accent-bg-color);
@@ -242,6 +318,11 @@ img {
   border: 0;
   -webkit-transition: background-color var(--animation);
   transition: background-color var(--animation);
+}
+@media screen and (min-width: 1200px) {
+  .hero-btn {
+    width: 218px;
+  }
 }
 
 .hero-btn:hover,
@@ -354,24 +435,38 @@ img {
   color: var(--second-text-color);
   text-transform: uppercase;
 }
+@media screen and (max-width: 1199px) {
+  .work {
+    display: none;
+  }
+}
 
 /* ceкція Наша команда */
 .team {
   background-color: var(--team-background);
-  font-size: 16px;
-  line-height: 1.19;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-wight: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /* Постійні клієнти */
@@ -572,6 +667,18 @@ address {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team-card {
+    -ms-flex-preferred-size: calc(100% - 30px)/2;
+        flex-basis: calc(100% - 30px)/2;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-card {
+    -ms-flex-preferred-size: calc(100% - 90px)/4;
+        flex-basis: calc(100% - 90px)/4;
+  }
 }
 
 .about-team {

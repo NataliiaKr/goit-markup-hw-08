@@ -3,36 +3,77 @@
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 60px;
+    padding-bottom: 60px;
     background-color: var(--second-background-color);
     text-align: center;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img.png);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bgd/hero-sm-@1x.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+     
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/hero-bgd/hero-sm-@2x.png);
+        }
+    
+        // Tablet images
+        @media screen and (min-width: 481px) {
+            background-image: url(../images/hero-bgd/hero-md-@1x.png);
+    
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../images/hero-bgd/hero-md-@2x.png);
+            }
+        }
+
+         @media screen and (min-width: 768px) {
+            padding-top: 118px;
+            padding-bottom: 118px;
+        }
+    
+        // Desktop images
+        @media screen and (min-width: 769px) {
+            background-image: url(../images/hero-bgd/hero-lg-@1x.png);
+    
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url(../images/hero-bgd/hero-lg-@2x.png);
+            }
+        }
+
+        @media screen and (min-width: 1200px) {
+            padding-top: 200px;
+            padding-bottom: 200px;
+        }
 }
 
 .hero-title {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: calc(60 / 44);
-    letter-spacing: 0.06em;
+    @include fonts(900, 26px, 1.61, 0.06em);
+    
     color: var(--second-text-color);
     text-transform: uppercase;
     margin: 0 auto 30px;
-    width: 696px;
+    
     text-align: center;
+
+    @media screen and (min-width: 1200px) {
+        @include fonts(900, 44px, 1.36, 0.06em);
+    }
 }
 
 /* кнопка замовлення послуги*/
 .hero-btn {
     font-family: inherit;
-    @include fonts(700, 16px, 1.87, 00.06em);
+    @include fonts(700, 16px, 1.87, 0.06em);
     
     cursor: pointer;
 
-    width: 218px;
+    width: 200px;
     min-height: 50px;
     padding: 10px 32px;
     background-color: var(--accent-bg-color);
@@ -43,6 +84,10 @@
     border: 0;
 
     transition: background-color var(--animation);
+
+    @media screen and (min-width: 1200px) {
+        width: 218px;
+    }
 }
 
 .hero-btn:hover,

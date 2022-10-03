@@ -30,4 +30,8 @@
         color: var(--second-text-color);
         text-transform: uppercase;
     }
+
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
 }

@@ -2,15 +2,20 @@
 
 .team {
     background-color: var(--team-background);
-    @include fonts(null, 16px, 1.19, null);
+    padding-top: 60px;
+    padding-bottom: 60px;
     
+    @media screen and (min-wight: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
+    }
 }
 
 .team-box {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     gap: 30px;
+    align-items: center;
+    justify-content: center;
 }
 
