@@ -1,7 +1,15 @@
 /* Підписка в футері */
 .subscription {
-    margin-left: auto;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width: 1200px) {
+        margin-left: auto;
+        display: block;
+    }
+    
+    
 }
 
 .subscription-title {
@@ -13,9 +21,12 @@
 }
 
 .submit-form {
+
+    @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
     justify-content: center;
+    }
 }
 
 .subscription-input {
@@ -44,9 +55,19 @@
     width: 200px;
     min-height: 50px;
     padding: 10px 28px;
-    margin-left: 10px;
     background-color: var(--accent-bg-color);
     transition: background-color var(--animation);
+
+     margin-left: auto;        
+     margin-right: auto;        
+     margin-top: 20px;
+        
+
+    @media screen  and (min-width: 1200px) {
+        margin-left: 10px;
+        margin-right: 0;
+        margin-top: 0;
+    }
 
     &:hover,
     &:focus {

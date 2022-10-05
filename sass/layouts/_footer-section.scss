@@ -7,14 +7,53 @@
 
 .footer-container {
     display: flex;
-    align-items: baseline;
+    flex-direction: column;
+    align-items: center;
+    
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+    
+}
+
+.footer-complex {
+    
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.footer-left {
+    @media screen and (max-width: 767px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+         margin-right: 165px;
+    }
+    
 }
 
 address {
     margin-top: 20px;
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
 }
 
 .contacts-footer {
     display: block;
+    margin-top: 8px;
+    
+    @media screen and (min-widht: 1200px){
     margin-top: 9px;
+    }
 }

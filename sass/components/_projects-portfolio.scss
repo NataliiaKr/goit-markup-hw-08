@@ -3,14 +3,22 @@
 .projects-list {
     display: flex;
     flex-wrap: wrap;
-    margin-top: calc(-1*(var(--gap)));
-    margin-left: calc(-1*(var(--gap)));
+    gap: 30px;
+
+    @media screen  and (min-width) {
+    
+    } 
 }
 
 .item-projects {
-    flex-basis: calc(100%/3 - (var(--gap)));
-    margin-top: var(--gap);
-    margin-left: var(--gap);
+    
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        flex-basis: calc((100% - 30px) / 2);
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 60px) / 3);
+    }
 }
 
 .project-thumb {

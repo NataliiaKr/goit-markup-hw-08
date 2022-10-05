@@ -1,11 +1,25 @@
 /* Кнопки фільтра в портфоліо */
 .filter-box {
-    display: flex;
-    align-items: center;
-    margin: 0 auto 50px;
+    display: inline-block;
+    margin: 0 0 40px;
+
+    @media screen and (max-wigth: 767px) {
+        max-width: 326px;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        margin: 0 auto 14px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin: 0 auto 50px;
+    }
 }
 
 .item-filter {
+    display: inline-block;
     margin-right: 8px;
 
     &:last-child {
