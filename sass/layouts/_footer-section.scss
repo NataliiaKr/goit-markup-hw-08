@@ -26,6 +26,11 @@
     align-items: center;
     justify-content: center;
   }
+
+  @media screen and (max-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .footer-left {
@@ -53,7 +58,7 @@ address {
     display: block;
     margin-top: 8px;
     
-    @media screen and (min-widht: 1200px){
+    @media screen and (min-width: 1200px) {
     margin-top: 9px;
     }
 }

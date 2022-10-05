@@ -584,6 +584,16 @@ img {
             justify-content: center;
   }
 }
+@media screen and (max-width: 1200px) {
+  .footer-complex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .footer-left {
@@ -621,7 +631,7 @@ address {
   display: block;
   margin-top: 8px;
 }
-@media screen and (min-widht: 1200px) {
+@media screen and (min-width: 1200px) {
   .contacts-footer {
     margin-top: 9px;
   }
