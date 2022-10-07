@@ -50,4 +50,8 @@
     color: var(--title-text-color);
     text-transform: uppercase;
     margin-bottom: 10px;
+
+    @media screen and (max-width: 767px) {
+        text-align: center;
+    }
 }

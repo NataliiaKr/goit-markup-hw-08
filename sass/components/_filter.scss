@@ -5,12 +5,13 @@
 
     @media screen and (max-wigth: 767px) {
         max-width: 326px;
+    
     }
 
     @media screen and (min-width: 768px) {
         display: flex;
         align-items: center;
-        margin: 0 auto 14px;
+        margin: 0 auto 30px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -24,6 +25,12 @@
 
     &:last-child {
     margin-right: 0;
+    }
+
+    @media screen and (max-width: 767px) {
+        &:first-child {
+            margin-bottom: 15px;
+        }
     }
 }
 

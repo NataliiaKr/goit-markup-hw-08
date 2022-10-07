@@ -75,6 +75,10 @@
     display: block;
     margin-bottom: 32px;
 
+    &.current {
+        color: var(--accent-text-color);
+    }
+
     &:hover,
     &:focus {
         color: var(--accent-text-color);

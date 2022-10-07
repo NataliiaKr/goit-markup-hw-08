@@ -1,9 +1,15 @@
 /* Cоцмережі в футері*/
 
 .footer-socials {
+    
     margin-top: 60px;
     margin-bottom: 60px;
     align-items: center;
+
+    @media screen and (min-width:768px) {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 
     @media screen and (min-width: 1200px) {
         margin-left: 70px;
