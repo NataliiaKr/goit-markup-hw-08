@@ -23,13 +23,20 @@
 }
 
 .feature__item {
+    margin-bottom: 60px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
     
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         flex-basis: calc((100% - 30px) / 2);
+        margin-bottom: 0;
     }
     
     @media screen and (min-width: 1200px) {
         flex-basis: calc((100% - 90px) / 4);
+        margin-bottom: 0;
     }
     
 }
